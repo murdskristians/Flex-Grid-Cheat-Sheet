@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="272px" height="179px" viewBox="0 0 272 179" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>flex-justify-content-space-between@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="30" width="200" height="120"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="200" height="120" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="2" y="32" width="39" height="116"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="39" height="116" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <rect id="path-5" x="81" y="32" width="39" height="116"></rect>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="39" height="116" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <rect id="path-7" x="159" y="32" width="39" height="116"></rect>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="39" height="116" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <use id="Rectangle" stroke="#412658" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+        <use id="Rectangle-2" stroke="#979797" mask="url(#mask-4)" stroke-width="2" fill="#B487B9" xlink:href="#path-3"></use>
+        <use id="Rectangle-2" stroke="#979797" mask="url(#mask-6)" stroke-width="2" fill="#B487B9" xlink:href="#path-5"></use>
+        <use id="Rectangle-2" stroke="#979797" mask="url(#mask-8)" stroke-width="2" fill="#B487B9" xlink:href="#path-7"></use>
+        <text id="flex-direction:-row" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="20" font-weight="bold" fill="#000000">
+            <tspan x="0" y="15">flex-direction: row</tspan>
+        </text>
+        <text id="cross-axis" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="20" font-weight="bold" fill="#000000">
+            <tspan x="220" y="82">cross </tspan>
+            <tspan x="220" y="106">axis</tspan>
+        </text>
+        <path d="M242.5,61.5 L242.5,35.5" id="Line" stroke="#412658" stroke-linecap="square" fill="#412658"></path>
+        <path id="Line-decoration-1" d="M242.5,35.5 L239.5,46.3 L245.5,46.3 L242.5,35.5 Z" stroke="#412658" stroke-linecap="square" fill="#412658"></path>
+        <path d="M241.5,119.5 L241.5,149.5" id="Line" stroke="#412658" stroke-linecap="square" fill="#412658"></path>
+        <path id="Line-decoration-1" d="M241.5,149.5 L244.5,138.7 L238.5,138.7 L241.5,149.5 Z" stroke="#412658" stroke-linecap="square" fill="#412658"></path>
+        <text id="main-axis" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="20" font-weight="bold" fill="#000000">
+            <tspan x="54" y="178">main axis</tspan>
+        </text>
+        <path d="M161.5,172.5 L199.5,172.5" id="Line" stroke="#412658" stroke-linecap="square" fill="#412658"></path>
+        <path id="Line-decoration-1" d="M199.5,172.5 L188.7,169.5 L188.7,175.5 L199.5,172.5 Z" stroke="#412658" stroke-linecap="square" fill="#412658"></path>
+        <path d="M42.5,173.5 L1.5,173.5" id="Line" stroke="#412658" stroke-linecap="square" fill="#412658"></path>
+        <path id="Line-decoration-1" d="M1.5,173.5 L12.3,176.5 L12.3,170.5 L1.5,173.5 Z" stroke="#412658" stroke-linecap="square" fill="#412658"></path>
+    </g>
+</svg>
