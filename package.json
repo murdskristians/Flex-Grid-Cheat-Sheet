@@ -1,0 +1,21 @@
+{
+  "name": "FlexGridCheatSheet",
+  "version": "1.0.0",
+  "description": "This will be my cheat-sheet for CSS flex and grid.",
+  "author": "Kristians Murds",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.4"
+  }
+}
