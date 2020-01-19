@@ -2,39 +2,37 @@
   <div>
     <h1 class="grid-title">display: grid;</h1>
 
-    <section class="main">
-      <section class="ai">
-        <h2>Ai</h2>
-        <h2>align-items: y-axis</h2>
-        <img src="~/assets/grid-ver.png" alt="Grid vertical positions" />
-        <h2>align-self</h2>
+    <section class="container">
+      <section class="main">
+        <section class="ai blue">
+          <h2>align-items:</h2>
+          <img class="justify-center" src="~/assets/grid-ver.png" alt="Grid vertical positions" />
+          <h2>align-self</h2>
+        </section>
+
+        <section class="ji green">
+          <h2 class="justify-all">justify-items:</h2>
+          <img src="~/assets/grid-hor.png" alt="Grid horizontal positions" />
+          <h2 class="justify-self">justify-self</h2>
+        </section>
       </section>
 
-      <section class="jc">
-        <h2>Jc</h2>
-        <h2>justify-items: x-axis</h2>
-        <img src="~/assets/grid-hor.png" alt="Grid horizontal positions" />
-        <h2>justify-self</h2>
+      <section class="additional">
+        <p>grid-template-(rows/columns): 1fr, 2fr...;(fr,px,%,auto)</p>
+        <p>grid-template-areas:</p>
+        <p class="grid-template-areas red">"head head head</p>
+        <p class="grid-template-areas green"> <span class="blue">nav</span>  main main</p>
+        <p class="grid-template-areas green"> <span class="blue">nav</span> main main"</p>
+        <p>grid-area: head/nav/main;</p>
+        <div class="grid">
+          <div>
+            <p>align-items: <span class="blue"> start</span>;</p>
+            <p>justify-items: <span class="green"> center</span>;</p>
+          </div>
+          <p>place-items: <span class="blue">start</span> <span class="green"> center</span>;</p>
+        </div>
       </section>
     </section>
-
-    <section class="additional">
-      <p>grid-template-(rows/columns): 1fr, 2fr...;(fr,px,%,auto)</p>
-      <p>
-        grid-template-areas: "head head head
-        nav main main
-        nav main main"
-      </p>
-      <p>grid-area: head/nav/main;</p>
-      <p>
-        align-items: start;
-        justify-items: center;
-      </p>
-      <p>place-items: start center;</p>
-    </section>
-
-    <h3>ALL</h3>
-    <h3>ONLY ONE</h3>
   </div>
 </template>
 
@@ -49,15 +47,63 @@ export default {}
   margin: 2vh 0 2vh 0;
 }
 
-.ai,
-.jc {
+p {
+ font-size: 1.2em;
+}
+.container {
   display: flex;
-  place-items: center;
-  place-content: space-around;
+  justify-content: space-around;
+}
+
+.ai,
+.ji {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
 }
 
 .additional {
   display: flex;
   flex-direction: column;
+}
+
+.justify-all::after {
+  content: 'ALL';
+  position: relative;
+  right: 50%;
+  top: 25px;
+  color: red;
+}
+.justify-self::after {
+  content: 'ONE';
+  position: relative;
+  right: 50%;
+  top: 25px;
+  color: red;
+}
+
+.justify-center {
+  justify-self: center;
+  position: relative;
+}
+
+.grid-template-areas {
+  position: relative;
+  left: 10vw;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.blue {
+    color: rgb(18, 4, 100)
+}
+.green {
+    color: rgb(15, 97, 0)
+}
+.red {
+    color: rgb(102, 0, 0)
 }
 </style>
