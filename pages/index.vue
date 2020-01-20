@@ -4,6 +4,7 @@
       <grid />
       <hr class="split">
       <flex />
+      <pictures />
     </div>
   </div>
 </template>
@@ -11,11 +12,13 @@
 <script>
 import Grid from '~/components/Grid.vue'
 import Flex from '~/components/Flex.vue'
+import Pictures from '~/components/Pictures.vue'
 
 export default {
   components: {
     Grid,
-    Flex
+    Flex,
+    Pictures
   }
 }
 </script>

@@ -1,15 +1,18 @@
 <template>
-    <div>
-
-    </div>
+  <div>
+    <test />
+  </div>
 </template>
 
 <script>
-    export default {
-        
-    }
+import Test from '@/assets/swaping/flex/align/content/flex-align-content-column-default.svg'
+
+export default {
+  components: {
+    Test
+  }
+}
 </script>
 
 <style scoped>
-
 </style>
