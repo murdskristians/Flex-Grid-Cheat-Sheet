@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="grid-title">display: grid;</h1>
+    <h1 class="title">display: grid;</h1>
 
     <section class="container">
       <section class="main">
@@ -21,15 +21,37 @@
         <p>grid-template-(rows/columns): 1fr, 2fr...;(fr,px,%,auto)</p>
         <p>grid-template-areas:</p>
         <p class="grid-template-areas red">"head head head</p>
-        <p class="grid-template-areas green"> <span class="blue">nav</span>  main main</p>
-        <p class="grid-template-areas green"> <span class="blue">nav</span> main main"</p>
-        <p>grid-area: head/nav/main;</p>
+        <p class="grid-template-areas green">
+          <span class="blue">nav</span> main main
+        </p>
+        <p class="grid-template-areas green">
+          <span class="blue">nav</span> main main"
+        </p>
+        <p>
+          grid-area:
+          <span class="red">head</span>/
+          <span class="blue">nav</span>/
+          <span class="green">main</span>;
+        </p>
+
+        <hr />
+
         <div class="grid">
           <div>
-            <p>align-items: <span class="blue"> start</span>;</p>
-            <p>justify-items: <span class="green"> center</span>;</p>
+            <p class="blue">
+              1.) align-items/content:
+              start;
+            </p>
+            <p class="green">
+              2.) justify-items/content:
+              center;
+            </p>
           </div>
-          <p>place-items: <span class="blue">start</span> <span class="green"> center</span>;</p>
+          <p>
+            = place-items/c:
+            <span class="blue">(1.align-items/c)</span>
+            <span class="green">(2.justify-items/c)</span>;
+          </p>
         </div>
       </section>
     </section>
@@ -41,15 +63,10 @@ export default {}
 </script>
 
 <style lang="css" scoped>
-.grid-title {
-  position: relative;
-  text-align: center;
-  margin: 2vh 0 2vh 0;
+p {
+  font-size: 1.2em;
 }
 
-p {
- font-size: 1.2em;
-}
 .container {
   display: flex;
   justify-content: space-around;
@@ -89,21 +106,12 @@ p {
 
 .grid-template-areas {
   position: relative;
-  left: 10vw;
+  padding-left: 5vw;
 }
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-}
-
-.blue {
-    color: rgb(18, 4, 100)
-}
-.green {
-    color: rgb(15, 97, 0)
-}
-.red {
-    color: rgb(102, 0, 0)
+  font-size: 0.7em;
 }
 </style>
