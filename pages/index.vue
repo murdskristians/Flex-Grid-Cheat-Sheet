@@ -4,23 +4,29 @@
       <grid />
       <hr class="split">
       <flex />
-      <pictures />
     </div>
   </div>
 </template>
 
+
 <script>
 import Grid from '~/components/Grid.vue'
 import Flex from '~/components/Flex.vue'
-import Pictures from '~/components/Pictures.vue'
 
 export default {
+  // head () {
+  //   return {
+  //     script: [
+  //       { src: '@/assets/darkmode.js' }
+  //     ]
+  //   }
+  // },
   components: {
     Grid,
-    Flex,
-    Pictures
+    Flex
   }
 }
+
 </script>
 
 <style>
@@ -55,5 +61,14 @@ export default {
 }
 .red {
     color: #C48181;
+}
+
+.darkmode--activated .title, p, span {
+  background-color: transparent;
+}
+
+.darkmode--activated img {
+  background-color: transparent;
+  filter: invert(1);
 }
 </style>
