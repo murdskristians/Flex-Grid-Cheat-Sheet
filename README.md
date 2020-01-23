@@ -1,6 +1,6 @@
-# FlexGridCheatSheet
+## FlexGridCheatSheet
 
-> This will be my cheat-sheet for CSS flex and grid.
+# Published live on: https://flexgridcheatsheet.netlify.com
 
 ## Build Setup
 
