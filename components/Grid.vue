@@ -84,19 +84,19 @@ p {
   flex-direction: column;
 }
 
-.justify-all::after {
-  content: 'ALL';
+.justify-all::after,
+.justify-self::after  {
   position: relative;
   right: 50%;
   top: 25px;
-  color: red;
+  color: var(--red);
+}
+
+.justify-all::after {
+  content: 'ALL';
 }
 .justify-self::after {
   content: 'ONE';
-  position: relative;
-  right: 50%;
-  top: 25px;
-  color: red;
 }
 
 .justify-center {

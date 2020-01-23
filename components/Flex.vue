@@ -5,16 +5,18 @@
     <div class="container">
       <div class="main">
         <section class="align-items blue">
-          <h2>align-items/content</h2>
+          <h2>align-<span class="red-circle">items</span>/ content </h2>
           <img src="@/assets/grid-ver.png" alt="Picture for grid vertical positioning." />
           <h2>align-self</h2>
         </section>
 
         <section class="justify-items green">
-          <h2>justify-items/content</h2>
+          <h2>justify-items/<span class="red-circle">content</span></h2>
           <img src="@/assets/flex-hor.png" alt="Picture for grid horizontal positioning." />
           <h2>justify-self</h2>
         </section>
+
+        <p class="justify-items red">If flex dirrection is column - switch pictures.</p>
       </div>
 
       <section class="additional">
