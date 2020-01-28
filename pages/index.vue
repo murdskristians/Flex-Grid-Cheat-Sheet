@@ -22,8 +22,7 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Volkhov&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 :root {
   --red: #c48181;
@@ -33,14 +32,15 @@ export default {
   padding: 0;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
-  font-family: 'Salsa', cursive;
   background-color: #fffdf9;
+}
+body {
+  font-family: 'Roboto', sans-serif;
 }
 .title {
   position: relative;
   text-align: center;
   margin: 2vh 0 2vh 0;
-  font-family: 'Volkhov', serif;
   font-weight: bold;
   color: #7e6551;
 }
@@ -79,8 +79,8 @@ span {
 @media screen and (max-width: 900px) {
   .main .align-items,
   .main .justify-items {
-      /* grid-template-columns: 1fr; */
-      padding-bottom: 20px;
+    /* grid-template-columns: 1fr; */
+    padding-bottom: 20px;
   }
   * {
     justify-items: center;
@@ -98,16 +98,16 @@ span {
     padding: 20px 20px 0 20px;
   }
   .container {
-    flex-direction:column;
+    flex-direction: column;
   }
   .flex-part .container {
     grid-template-columns: 1fr;
   }
   .grid-part .justify-items,
   .flex-part .justify-items {
-    grid-template-areas: 
-    "pic pic pic pic pic"
-    "all all . self self";
+    grid-template-areas:
+      'pic pic pic pic pic'
+      'all all . self self';
   }
   .flex-part .justify-items {
     display: grid;
@@ -119,11 +119,11 @@ span {
     width: 60vw;
   }
   .grid-part .justify-items .justify-all,
-  .flex-part .justify-items .justify-all{
+  .flex-part .justify-items .justify-all {
     grid-area: all;
   }
   .grid-part .justify-items .justify-self,
-  .flex-part .justify-items .justify-self{
+  .flex-part .justify-items .justify-self {
     grid-area: self;
   }
   .flex-part .align-items img {
