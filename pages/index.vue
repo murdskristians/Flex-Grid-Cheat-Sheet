@@ -50,6 +50,7 @@ export default {
     flex-direction: column;
   }
   .flex-part .container {
+    display: grid;
     grid-template-columns: 1fr;
   }
   .grid-part .justify-items,
@@ -99,6 +100,8 @@ body {
 }
 .split {
   margin: 10px 0 5px 0;
+  height: 4px;
+  background: black;
 }
 .blue {
   color: #7470d1;
