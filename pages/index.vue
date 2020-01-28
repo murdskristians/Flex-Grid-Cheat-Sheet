@@ -27,54 +27,6 @@ export default {
 :root {
   --red: #c48181;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  background-color: #fffdf9;
-}
-body {
-  font-family: 'Roboto', sans-serif;
-}
-.title {
-  position: relative;
-  text-align: center;
-  margin: 2vh 0 2vh 0;
-  font-weight: bold;
-  color: #7e6551;
-}
-.split {
-  margin: 10px 0 5px 0;
-}
-
-.blue {
-  color: #7470d1;
-}
-.green {
-  color: #7cc19c;
-}
-.red {
-  color: var(--red);
-}
-
-.red-circle {
-  border: var(--red);
-  border-style: solid;
-  padding: 5px;
-  border-radius: 50%;
-}
-
-.darkmode--activated .title,
-p,
-span {
-  background-color: transparent;
-}
-
-.darkmode--activated img {
-  background-color: transparent;
-  filter: invert(1);
-}
 
 @media screen and (max-width: 900px) {
   .main .align-items,
@@ -130,4 +82,54 @@ span {
     margin-bottom: 10px;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background-color: #fffdf9;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.title {
+  position: relative;
+  text-align: center;
+  margin: 2vh 0 2vh 0;
+  font-weight: bold;
+  color: #7e6551;
+}
+.split {
+  margin: 10px 0 5px 0;
+}
+
+.blue {
+  color: #7470d1;
+}
+.green {
+  color: #7cc19c;
+}
+.red {
+  color: var(--red);
+}
+
+.red-circle {
+  border: var(--red);
+  border-style: solid;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.darkmode--activated .title,
+p,
+span {
+  background-color: transparent;
+}
+
+.darkmode--activated img {
+  background-color: transparent;
+  filter: invert(1);
+}
+
 </style>
