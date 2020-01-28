@@ -49,7 +49,7 @@ export default {
   .grid-part .container {
     flex-direction: column;
   }
-  .flex-part .container {
+  .flex-part div.container {
     display: grid;
     grid-template-columns: 1fr;
   }
