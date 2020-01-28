@@ -59,7 +59,10 @@ export default {
       'pic pic pic pic pic'
       'all all . self self';
   }
-  .flex-part .justify-items {
+  .flex-part .main {
+    width: 100%;
+  }
+  .flex-part .main .justify-items {
     display: grid;
   }
   .grid-part .justify-items img,
