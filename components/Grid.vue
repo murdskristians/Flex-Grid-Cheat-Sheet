@@ -1,16 +1,16 @@
 <template>
-  <div>
+  <div class="grid-part">
     <h1 class="title">display: grid;</h1>
 
     <section class="container">
       <section class="main">
-        <section class="ai blue">
+        <section class="align-items blue">
           <h2>align-items:</h2>
           <img class="justify-center" src="~/assets/grid-ver.png" alt="Grid vertical positions" />
           <h2>align-self</h2>
         </section>
 
-        <section class="ji green">
+        <section class="justify-items green">
           <h2 class="justify-all">justify-items:</h2>
           <img src="~/assets/grid-hor.png" alt="Grid horizontal positions" />
           <h2 class="justify-self">justify-self</h2>
@@ -72,8 +72,8 @@ p {
   justify-content: space-around;
 }
 
-.ai,
-.ji {
+.align-items,
+.justify-items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
@@ -85,7 +85,7 @@ p {
 }
 
 .justify-all::after,
-.justify-self::after  {
+.justify-self::after {
   position: relative;
   right: 50%;
   top: 25px;

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="flex-part">
     <h1 class="title">display: flex;</h1>
 
     <div class="container">
@@ -11,9 +11,9 @@
         </section>
 
         <section class="justify-items green">
-          <h2>justify-items/<span class="red-circle">content</span></h2>
+          <h2 class="justify-all">justify-items/<span class="red-circle">content</span></h2>
           <img src="@/assets/flex-hor.png" alt="Picture for grid horizontal positioning." />
-          <h2>justify-self</h2>
+          <h2 class="justify-self">justify-self</h2>
         </section>
 
         <p class="justify-items red">If flex dirrection is column - switch pictures.</p>

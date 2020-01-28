@@ -75,4 +75,59 @@ span {
   background-color: transparent;
   filter: invert(1);
 }
+
+@media screen and (max-width: 900px) {
+  .main .align-items,
+  .main .justify-items {
+      /* grid-template-columns: 1fr; */
+      padding-bottom: 20px;
+  }
+  * {
+    justify-items: center;
+  }
+  .title {
+    font-size: 1.7em;
+    padding-bottom: 40px;
+  }
+  h2 {
+    font-size: 0.9em;
+  }
+  .flex-part p,
+  .grid-part p {
+    font-size: 0.7em;
+    padding: 20px 20px 0 20px;
+  }
+  .container {
+    flex-direction:column;
+  }
+  .flex-part .container {
+    grid-template-columns: 1fr;
+  }
+  .grid-part .justify-items,
+  .flex-part .justify-items {
+    grid-template-areas: 
+    "pic pic pic pic pic"
+    "all all . self self";
+  }
+  .flex-part .justify-items {
+    display: grid;
+  }
+  .grid-part .justify-items img,
+  .flex-part .justify-items img {
+    grid-area: pic;
+    padding-bottom: 20px;
+    width: 60vw;
+  }
+  .grid-part .justify-items .justify-all,
+  .flex-part .justify-items .justify-all{
+    grid-area: all;
+  }
+  .grid-part .justify-items .justify-self,
+  .flex-part .justify-items .justify-self{
+    grid-area: self;
+  }
+  .flex-part .align-items img {
+    margin-bottom: 10px;
+  }
+}
 </style>
