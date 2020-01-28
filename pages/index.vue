@@ -8,7 +8,6 @@
   </div>
 </template>
 
-
 <script>
 import Grid from '~/components/Grid.vue'
 import Flex from '~/components/Flex.vue'
@@ -22,8 +21,6 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
 :root {
   --red: #c48181;
 }
@@ -49,7 +46,7 @@ export default {
     font-size: 0.7em;
     padding: 20px 20px 0 20px;
   }
-  .container {
+  .grid-part .container {
     flex-direction: column;
   }
   .flex-part .container {
@@ -103,7 +100,6 @@ body {
 .split {
   margin: 10px 0 5px 0;
 }
-
 .blue {
   color: #7470d1;
 }
@@ -113,23 +109,19 @@ body {
 .red {
   color: var(--red);
 }
-
 .red-circle {
   border: var(--red);
   border-style: solid;
   padding: 5px;
   border-radius: 50%;
 }
-
 .darkmode--activated .title,
 p,
 span {
   background-color: transparent;
 }
-
 .darkmode--activated img {
   background-color: transparent;
   filter: invert(1);
 }
-
 </style>
