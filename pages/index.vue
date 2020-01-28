@@ -130,4 +130,7 @@ span {
   background-color: transparent;
   filter: invert(1);
 }
+.dark-toggle {
+  z-index: 1;
+}
 </style>
