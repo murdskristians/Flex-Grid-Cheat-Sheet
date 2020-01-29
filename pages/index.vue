@@ -26,9 +26,11 @@ export default {
 }
 
 @media screen and (max-width: 900px) {
+  body {
+    min-width: 340px;
+  }
   .main .align-items,
   .main .justify-items {
-    /* grid-template-columns: 1fr; */
     padding-bottom: 20px;
   }
   * {
@@ -44,7 +46,7 @@ export default {
   .flex-part p,
   .grid-part p {
     font-size: 0.7em;
-    padding: 20px 20px 0 20px;
+    padding: 0 20px 0 20px;
   }
   .grid-part .container {
     flex-direction: column;
@@ -82,7 +84,57 @@ export default {
   .flex-part .align-items img {
     margin-bottom: 10px;
   }
+  .additional {
+    padding: 40px 20px 10px 20px;
+  }
+  .darkmode-toggle {
+    z-index: 1;
+  }
+  .justify-all::after,
+  .justify-self::after {
+    color: var(--red);
+    position: relative;
+    right: 50%;
+    top: 25px;
+  }
 }
+@media screen and (min-width: 500px) and (max-width: 900px) {
+  .title {
+    font-size: 1.9em;
+  }
+  h2 {
+    font-size: 1.7em;
+  }
+  .flex-part p,
+  .grid-part p {
+    font-size: 1em;
+  }
+  .grid-part .justify-items img,
+  .flex-part .justify-items img {
+    padding-bottom: 20px;
+    width: 30vw;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1275px) {
+  .justify-all::after,
+  .justify-self::after {
+    color: var(--red);
+    position: relative;
+    padding-left: 10px;
+    top: 0;
+    left: 0;
+  }
+}
+@media screen and (min-width: 1275px) {
+  .justify-all::after,
+  .justify-self::after {
+    color: var(--red);
+    position: relative;
+    right: 50%;
+    top: 25px;
+  }
+}
+/* Not a media querry */
 * {
   margin: 0;
   padding: 0;
@@ -90,9 +142,14 @@ export default {
   -moz-box-sizing: border-box;
   background-color: #fffdf9;
 }
-
 body {
   font-family: 'Roboto', sans-serif;
+}
+.container {
+  padding: 20px;
+}
+.additional {
+  padding-left: 20px;
 }
 .title {
   position: relative;
@@ -133,7 +190,7 @@ span {
 .darkmode--activated p:not(.blue, .red, .green) {
   color: rgb(87, 36, 36);
 }
-.dark-toggle {
+.darkmode-toggle {
   z-index: 1;
 }
 </style>

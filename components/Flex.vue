@@ -6,7 +6,7 @@
       <div class="main">
         <section class="align-items blue">
           <h2>align-<span class="red-circle">items</span>/ content </h2>
-          <img src="@/assets/grid-ver.png" alt="Picture for grid vertical positioning." />
+          <img src="@/assets/flex-ver.png" alt="Picture for grid vertical positioning." />
           <h2>align-self</h2>
         </section>
 
@@ -17,6 +17,7 @@
         </section>
 
         <p class="justify-items red">If flex dirrection is column - switch pictures.</p>
+        <p class="justify-items red">Circled words are ussed most common to position in center.</p>
       </div>
 
       <section class="additional">

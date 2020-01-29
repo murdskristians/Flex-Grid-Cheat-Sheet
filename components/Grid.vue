@@ -84,14 +84,6 @@ p {
   flex-direction: column;
 }
 
-.justify-all::after,
-.justify-self::after {
-  position: relative;
-  right: 50%;
-  top: 25px;
-  color: var(--red);
-}
-
 .justify-all::after {
   content: 'ALL';
 }
