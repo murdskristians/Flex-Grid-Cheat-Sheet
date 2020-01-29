@@ -128,7 +128,10 @@ span {
 }
 .darkmode--activated img {
   background-color: transparent;
-  filter: invert(1);
+  filter: invert(1) contrast(0.15) hue-rotate(300deg);
+}
+.darkmode--activated p:not(.blue, .red, .green) {
+  color: rgb(87, 36, 36);
 }
 .dark-toggle {
   z-index: 1;
